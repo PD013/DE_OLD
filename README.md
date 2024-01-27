@@ -8,4 +8,8 @@ Welcome to my Data Engineering ZoomCamp repository! This repository contains all
 
 ## Table of Contents
 
-- [Homework Solutions](#homework-solutions)
+###  Homework Solutions
+
+### Week 1
+
+- [HW_Week - 1](hw_3.sql)
