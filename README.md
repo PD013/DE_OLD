@@ -12,4 +12,4 @@ Welcome to my Data Engineering ZoomCamp repository! This repository contains all
 
 ### Week 1
 
-- [HW_Week - 1](hw_3.sql)
+- [HW_Week - 1](Week_1_Hw)
