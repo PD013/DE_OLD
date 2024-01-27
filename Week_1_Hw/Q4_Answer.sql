@@ -6,3 +6,5 @@ FROM
 GROUP BY
   pickup_day
 ORDER BY max_trip_distance DESC;
+
+-- Answer :- 2019-09-26
