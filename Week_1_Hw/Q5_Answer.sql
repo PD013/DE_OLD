@@ -17,3 +17,5 @@ HAVING
 ORDER BY
   total_amount_sum DESC
 LIMIT 3;
+
+Answer :- "Brooklyn" "Manhattan" "Queens"
