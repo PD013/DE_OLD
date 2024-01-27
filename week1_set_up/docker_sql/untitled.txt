@@ -1,0 +1,87 @@
+
+  To runn thr docker container
+  winpty docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v "C:\Users\sai\Downloads\DE_Project_git_connected\DE_OLD\week1_set_up\docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data" \
+  -p 5432:5432 \
+  postgres:13
+
+- To connect to POSTGRES
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+
+- To run Pg Admin 
+winpty docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  dpage/pgadmin4
+
+# Creating a network
+docker network create pg-network
+
+# Running postgress Again while connecting with pg_admin
+winpty docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v "C:\Users\sai\Downloads\DE_Project_git_connected\DE_OLD\week1_set_up\docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data" \
+  -p 5432:5432 \
+  --network=pg-network \
+  --name pg-database \
+  postgres:13
+
+
+# Runing pg-admin after connecting 
+winpty docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  --network=pg-network \
+  --name pgadmin-2 \
+  dpage/pgadmin4
+
+
+ # path of yellow_trip_data
+  C:\Users\sai\Downloads\DE_Project_git_connected\DE_OLD\week1_set_up\docker_sql\yellow_tripdata_2021-01.csv
+
+# Data ingestion Running locally
+# Run Both same time then 
+# below url will be used in the below docker statement
+
+# Its the green taxi data
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz"
+
+winpty python ingest_data.py \
+  --user=root \
+  --password=root \
+  --host=localhost \
+  --port=5432 \
+  --db=ny_taxi \
+  --table_name=green_taxi_data_sept \
+  --url=${URL}
+
+# This is to make a docker file based on ingestion.py 
+docker build -t taxi_ingest:v001 .
+
+#
+URL="https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv"
+
+docker run -it \
+  --network=pg-network \
+  taxi_ingest:v001 \
+    --user=root \
+    --password=root \
+    --host=pg-database \
+    --port=5432 \
+    --db=ny_taxi \
+    --table_name=green_taxi_data_sept \
+    --url=${URL}
+
+
+# Till here We have completed till Dockerizing the ingestion process
+# Now Running Postgres and pgAdmin with Docker-Compose
+
+-- Anytime If want too start PgAdmin then just pass
+docker compose up Command and go to Localhost8080 on browser
