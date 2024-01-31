@@ -60,3 +60,18 @@ Note: it's not a typo, it's tip , not trip
 - Jamaica
 - JFK Airport
 - Long Island City/Queens Plaza
+
+## Question 7. Creating Resources
+
+After updating the main.tf and variable.tf files run:
+
+```
+terraform apply
+```
+Answer 
+
+```
+Terraform used the selected providers to generate the following execution plan. 
+Resource actions are indicated with the following symbols: 
+... and much more 
+```
