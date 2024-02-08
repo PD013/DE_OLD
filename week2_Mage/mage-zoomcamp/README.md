@@ -2,6 +2,8 @@
 <img src="https://github.com/mage-ai/assets/blob/main/mascots/mascots-shorter.jpeg?raw=true">
 </div>
 
+## [Week_2_Hw](https://github.com/PD013/Data_Engineering-Zoomcamp/tree/main/Week_2_Hw)
+
 ## Data Engineering Zoomcamp - Week 2
 
 Welcome to DE Zoomcamp with Mage! 
