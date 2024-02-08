@@ -13,3 +13,4 @@ Welcome to my Data Engineering ZoomCamp repository! This repository contains all
 ### Week 1
 
 - [HW_Week - 1](Week_1_Hw)
+- [HW Week - 2](Week_2_Hw)
