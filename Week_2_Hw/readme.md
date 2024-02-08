@@ -54,6 +54,7 @@ What are the existing values of `VendorID` in the dataset?
 * 1
 
 ``Answer :- 1 or 2``
+[Answer](testing_sql_for_green.sql)
 
 ## Question 5. Data Transformation
 
