@@ -1,3 +1,9 @@
+# Pipeline : green_taxi_etl
+
+![image](https://github.com/PD013/Data_Engineering-Zoomcamp/assets/114251906/b50f239e-1798-433a-93cc-475f24a8b6cf)
+
+
+
 ### Questions
 
 ## Question 1. Data Loading
