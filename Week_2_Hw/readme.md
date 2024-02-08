@@ -1,11 +1,14 @@
-# Pipeline : green_taxi_etl
-
+# green_taxi_etl 
 ![image](https://github.com/PD013/Data_Engineering-Zoomcamp/assets/114251906/b50f239e-1798-433a-93cc-475f24a8b6cf)
 
-## [Load_api_data_green](https://github.com/PD013/Data_Engineering-Zoomcamp/blob/main/Week_2_Hw/load_api_data_green.py)
-## [transform_green_taxi_data](https://github.com/PD013/Data_Engineering-Zoomcamp/blob/main/Week_2_Hw/transform_green_taxi_data.py)
-## [green_taxi_to_gcs_partitioned_parquet.](https://github.com/PD013/Data_Engineering-Zoomcamp/blob/main/Week_2_Hw/green_taxi_to_gcs_partitioned_parquet.py)
-## [green_taxi_data_to_postgress](https://github.com/PD013/Data_Engineering-Zoomcamp/blob/main/Week_2_Hw/green_taxi_data_to_postgress.py)
+- ### [Load_api_data_green](load_api_data_green.py) - 
+- ### [transform_green_taxi_data](transform_green_taxi_data.py) -
+- ### [green_taxi_to_gcs_partitioned_parquet](green_taxi_to_gcs_partitioned_parquet.py) 
+- ###  [green_taxi_data_to_postgress](green_taxi_data_to_postgress.py) 
+- ### [Triggers](triggers.yaml) 
+- ###  [metadata](metadata.yaml)
+
+
 
 
 ### Questions
