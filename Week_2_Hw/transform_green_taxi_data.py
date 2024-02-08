@@ -44,5 +44,5 @@ def test_output(output, *args) -> None:
     
     # Check if 'vendor_id' is not null
     assert output['vendor_id'].notnull().all(), 'There are null values in vendor_id'
-    # Check if 'vendor_id' contains only integer values
+    # Check if 'vendor_id' is present in the output in required format
     assert 'vendor_id' in output.columns, 'vendor_id column is missing in the DataFrame'
