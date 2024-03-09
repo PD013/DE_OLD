@@ -8,10 +8,14 @@ Welcome to my Data Engineering ZoomCamp repository! This repository contains all
 
 ## Table of Contents
 
-###  Homework Solutions
+##  Homework Solutions
 
 ### Week 1
-
 - [HW_Week - 1](Week_1_Hw)
+### Week 2
 - [HW Week - 2](Week_2_Hw)
+### Week 3
 - [HW Week - 3](Week_3_Hw)
+### DLT workshop
+- [HW DLT Workshop](Week_3_Hw)
+
