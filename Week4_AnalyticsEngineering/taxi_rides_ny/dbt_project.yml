@@ -43,7 +43,7 @@ models:
 #       core:
 #           materialized: table
 vars:
-  payment_type_values: [1, 2, 3, 4, 5, 6]
+  payment_type_values: [1, 2, 3, 4, 5]
 
 # seeds: 
 #     taxi_rides_ny:
@@ -53,4 +53,4 @@ vars:
 #                 borough: STRING
 #                 zone: STRING
 #                 service_zone: STRING
-      
+#Adding line for just github pull request (DONOT TAKE IT SRYSLY)
