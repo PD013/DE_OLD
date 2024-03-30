@@ -18,4 +18,6 @@ Welcome to my Data Engineering ZoomCamp repository! This repository contains all
 - [HW Week - 3](Week_3_Hw)
 ### DLT workshop
 - [HW DLT Workshop](DLT_Workshop/Homework_data_talks_club_data_extraction_and_ingestion.ipynb)
+### Week 4
+- [HW Week - 4](Week_4_Hw)
 
